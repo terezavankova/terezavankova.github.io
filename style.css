@@ -147,7 +147,7 @@ main {
 
 h1 {
   color: #f7ece7;
-  margin: 10px 10px 0px 300px;
+  margin: 35px 10px 0px 300px;
   font-size: 1.2em;
   line-height: 1.5em;
   font-weight: 300;
@@ -231,6 +231,21 @@ p strong {
   font-size: 2em;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+.container img {
+  margin: 30px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+input[type="checkbox"]:checked ~ label > img {
+  transform: scale(1.5);
+  cursor: zoom-out;
+}
+
 /* ADAPTIVE */
 @media screen and (max-width: 1000px) {
   body {
@@ -244,6 +259,18 @@ p strong {
   .github-page {
     padding-left: 10px;
   }
+  .container img {
+    transition: none;
+    transform: none;
+  }
+  .container img {
+    transition: none;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked ~ label > img {
+    transform: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
@@ -256,7 +283,9 @@ p strong {
     float: none;
     width: 100%;
     margin: 5px;
+    
   }
+
 
   h1 {
     margin-left: 10px;
@@ -289,5 +318,20 @@ p strong {
 
   .github-page {
     margin-left: 15px;
+  }
+
+  .container img {
+    transition: none;
+    cursor: pointer;
+  }
+
+  .powered{
+    text-align: left;
+    margin-left: 15px;
+    }
+
+  input[type="checkbox"]:checked ~ label > img {
+    transform: none;
+    cursor: pointer;
   }
 }
