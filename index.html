@@ -2,9 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Portfolio for Avast</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="normalize.css" />
@@ -13,6 +18,8 @@
       src="https://kit.fontawesome.com/8f4a200ff4.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="app.js"></script>
   </head>
   <body>
     <header>
@@ -68,9 +75,10 @@
     </header>
     <main>
       <div class="person group">
-        <a href="images/tv.png" class="my-picture">
-          <img src="images/tv.png" alt="my picture" width="200px" />
+        <a href="#" class="my-picture">
+          <img src="images/tv.png" alt="my picture" />
         </a>
+
         <h1>
           Hi, I'm <strong>Tereza</strong>.<br />
           I studied molecular biology and cytogenetics, but I found a passion
@@ -83,8 +91,8 @@
         </h1>
       </div>
       <div class="reactgirls group">
-        <a href="https://reactgirls.com" target="blank" class="logo">
-          <img src="images/rg.png" alt="reactgirls logo" width="300px" />
+        <a href="#" class="logo">
+          <img src="images/rg.png" onclick="this.src='images/logo.png'" />
         </a>
         <p>
           I founded <strong>Reactgirls</strong> community. Reactgirls is full of
@@ -92,7 +100,6 @@
           knowledge with women who want to develop their tech skills. We focus
           on frontend development and technologies such as
           <strong>HTML, CSS, JavaScript</strong> and <strong>React</strong>.
-          Also we support women with career change.
         </p>
         <a href="https://reactgirls.com" target="blank" class="page">LINK</a>
       </div>
@@ -101,12 +108,11 @@
       <p class="footer">
         Thank you for your time and have a great day!
       </p>
-      <a href="#" class="github-page"><em>Page's Github</em></a>
+      <a href="https://github.com/vankovat/personal_page" class="github-page"
+        ><em>Page's Github</em></a
+      >
       <p class="powered">
-        <em
-          >Powered by HTML, CSS, JavaScript, Bootstrap, Figma, Heroku,
-          VSCode</em
-        >
+        <em>Powered by HTML, CSS, JavaScript, Figma, Heroku, VSCode</em>
       </p>
     </footer>
   </body>

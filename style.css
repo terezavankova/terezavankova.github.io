@@ -136,13 +136,13 @@ strong {
 
 main {
   width: 700;
-  margin-right
 }
 
 .my-picture img {
-  margin-left: 50px;
   border-radius: 50%;
   float: left;
+  width: 200px;
+  margin-left: 20px;
 }
 
 h1 {
@@ -165,13 +165,14 @@ p {
 .logo img {
   float: right;
   border-radius: 10px;
+  width: 200px;
 }
 
 .reactgirls {
   background-color: #f7ece7;
   margin: 50px 5px 20px 5px;
   border-radius: 10px;
-  padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
 p strong {
@@ -184,6 +185,7 @@ p strong {
   font-size: 1.2em;
   line-height: 1.5em;
   font-weight: 700;
+  font-family: "Open Sans", sans-serif;
   border: #00b4cd none;
   background-color: #00b4cd;
   border-radius: 4px;
@@ -193,7 +195,7 @@ p strong {
 
 .page:hover,
 .page:focus {
-    background-color: #8BBCD6
+  background-color: #8bbcd6;
 }
 
 .footer {
@@ -210,11 +212,10 @@ p strong {
   padding: 10px 0px 0px 13px;
   font-size: 0.8em;
   line-height: 1em;
-  
 }
 
 .powered {
-    color: #de7a7c;
+  color: #de7a7c;
   padding: 0px 0px 30px 8px;
   font-size: 0.8em;
   line-height: 1em;
@@ -222,77 +223,71 @@ p strong {
 
 .github-page:hover,
 .github-page:focus {
-  color: #FFBBB5;
+  color: #ffbbb5;
+}
+
+#nic {
+  color: blanchedalmond;
+  font-size: 2em;
 }
 
 /* ADAPTIVE */
 @media screen and (max-width: 1000px) {
+  body {
+    width: 100%;
+  }
 
-    body{
-        width: 100%
-    }
-
-    .footer {
-        padding-left: 10px ;
-        margin-top: 10px;
-    }
-    .github-page{
-        padding-left: 10px;
-    }
-
+  .footer {
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  .github-page {
+    padding-left: 10px;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .person .group {
+    width: 100%;
+    text-align: center;
+  }
 
-    .person .group{
-        width: 100%;
-        text-align: center;
-    }
+  .person img {
+    float: none;
+    width: 100%;
+    margin: 5px;
+  }
 
+  h1 {
+    margin-left: 10px;
+    text-align: center;
+  }
 
-    .person img{
-        margin-left: 5px;
-        margin-right: 5px;
-        float:none;
-        width: 100%;
-        margin: auto
-        
-    }
+  .page {
+    margin-left: 20px;
+  }
 
-    h1{
-        margin-left: 10px;
-        text-align: center;
-    }
+  p {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-    .page{
-        margin-left: 20px;
-    }
+  .reactgirls img {
+    margin-left: 5px;
+    margin-right: 5px;
+    float: none;
+    width: 100%;
+    margin: auto;
+  }
 
-    p{
-        text-align: center;
-        margin-left: 5px;
-        margin-right: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+  .page {
+    display: none;
+  }
 
-    .reactgirls img{
-        margin-left: 5px;
-        margin-right: 5px;
-        float:none;
-        width: 100%;
-        margin: auto
-        
-    }
-
-    .page {
-        display: none;
-            
-    }
-
-    .github-page{
-        padding-left: 10px;
-    }
+  .github-page {
+    margin-left: 15px;
+  }
 }
-
-
